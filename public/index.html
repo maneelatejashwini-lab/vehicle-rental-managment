@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja DriveEase | Vehicle Rental Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">D</span><span>Teja Drive<span class="brand-accent">Ease</span><small>VEHICLE RENTAL MANAGEMENT</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="/">Home</a><a href="/vehicles.html">Vehicles</a><a href="/bookings.html">Bookings</a><a href="/customers.html">Customers</a><a href="/dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-slider">
+      <div class="slide active">
+        <div class="slide-photo photo-placeholder"><span>YOUR VEHICLE IMAGE 01</span><small>Add your own image in public/images and update the CSS background</small></div>
+        <div class="hero-copy"><span class="eyebrow">YOUR JOURNEY, YOUR WAY</span><h1>Every road has<br><em>a story.</em></h1><p>Manage your fleet, bookings and customers in one smooth, organized place.</p><div class="hero-actions"><a class="btn btn-primary" href="/bookings.html">Create a Booking ↗</a><a class="btn btn-outline" href="/vehicles.html">Explore Vehicles</a></div></div>
+      </div>
+      <div class="slide">
+        <div class="slide-photo photo-placeholder alt-photo"><span>YOUR VEHICLE IMAGE 02</span><small>Replace this placeholder with your own photo</small></div>
+        <div class="hero-copy"><span class="eyebrow">SIMPLE FLEET CONTROL</span><h1>Your fleet.<br><em>Under control.</em></h1><p>Find vehicles quickly, track availability and keep rental records organized.</p><div class="hero-actions"><a class="btn btn-primary" href="/dashboard.html">View Dashboard ↗</a><a class="btn btn-outline" href="/vehicles.html">Manage Fleet</a></div></div>
+      </div>
+      <button class="slider-arrow prev" aria-label="Previous slide">‹</button><button class="slider-arrow next" aria-label="Next slide">›</button>
+      <div class="slider-dots"><button class="dot active" aria-label="Slide 1"></button><button class="dot" aria-label="Slide 2"></button></div>
+    </section>
+    <section class="section container">
+      <div class="section-heading"><div><span class="eyebrow">AT A GLANCE</span><h2>Your rental overview</h2></div><a class="text-link" href="/dashboard.html">Full dashboard ↗</a></div>
+      <div class="stats-grid">
+        <article class="stat-card"><span class="stat-icon">▣</span><p>Total vehicles</p><strong id="totalVehicles">—</strong><small>Vehicles in your fleet</small></article>
+        <article class="stat-card"><span class="stat-icon green">✓</span><p>Available now</p><strong id="availableVehicles">—</strong><small>Ready to be rented</small></article>
+        <article class="stat-card"><span class="stat-icon orange">↗</span><p>Not available</p><strong id="unavailableVehicles">—</strong><small>Currently unavailable</small></article>
+        <article class="stat-card"><span class="stat-icon purple">▤</span><p>Total bookings</p><strong id="totalBookings">—</strong><small>Rental records created</small></article>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="section-heading"><div><span class="eyebrow">QUICK ACCESS</span><h2>What would you like to do?</h2></div></div>
+      <div class="quick-grid">
+        <a class="quick-card" href="/vehicles.html"><span class="quick-icon">🚘</span><h3>Manage vehicles</h3><p>Add vehicles, update prices and check availability.</p><b>Open fleet →</b></a>
+        <a class="quick-card" href="/bookings.html"><span class="quick-icon">🗓️</span><h3>Create a booking</h3><p>Record customer details and calculate rental cost.</p><b>Book a vehicle →</b></a>
+        <a class="quick-card" href="/customers.html"><span class="quick-icon">👤</span><h3>Customer directory</h3><p>View customers saved through your bookings.</p><b>View customers →</b></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>© 2026 DriveEase Rental Management</span><span>Designed for smooth journeys.</span></footer>
+  <script src="/js/main.js"></script>
+</body></html>

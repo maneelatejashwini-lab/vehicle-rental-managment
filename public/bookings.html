@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bookings | TejaDriveEase</title><link rel="stylesheet" href="/css/style.css"></head>
+<body data-page="bookings">
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">D</span><span>Teja Drive<span class="brand-accent">Ease</span><small>VEHICLE RENTAL MANAGEMENT</small></span></a><button class="menu-toggle" id="menuToggle">☰</button><nav class="nav-links" id="navLinks"><a href="/">Home</a><a href="/vehicles.html">Vehicles</a><a class="active" href="/bookings.html">Bookings</a><a href="/customers.html">Customers</a><a href="/dashboard.html">Dashboard</a></nav></header>
+<main><section class="page-hero"><div class="page-hero-photo photo-placeholder alt-photo"><span>YOUR TRAVEL IMAGE</span></div><div class="page-hero-copy"><span class="eyebrow">RESERVATIONS</span><h1>Plan the trip.<br><em>We'll track the details.</em></h1><p>Create bookings and get an estimated rental total before saving.</p></div></section>
+<section class="container section"><div class="section-heading"><div><span class="eyebrow">NEW RESERVATION</span><h2>Create a booking</h2><p class="muted">The rental cost is calculated using the selected vehicle's daily rate.</p></div></div>
+<div class="booking-layout"><form id="bookingForm" class="panel form-grid">
+<label>Vehicle *<select id="bookingVehicle" required><option value="">Choose an available vehicle ▾</option></select></label>
+<label>Customer full name *<input id="customer_name" required placeholder="Enter customer name"></label>
+<label>Phone number *<input id="phone" required type="tel" placeholder="Enter phone number"></label>
+<label>Email (optional)<input id="email" type="email" placeholder="name@example.com"></label>
+<label>Driving licence number *<input id="license_number" required placeholder="Enter licence number"></label>
+<label>Pickup date *<input id="start_date" type="date" required></label>
+<label>Return date *<input id="end_date" type="date" required></label>
+<div class="form-actions"><button class="btn btn-primary" type="submit">Confirm booking</button><button class="btn btn-light" type="reset">Clear</button></div>
+<div id="bookingMessage" class="message" role="status"></div>
+</form><aside class="panel estimate-panel"><span class="eyebrow">RENTAL ESTIMATE</span><h3>Your trip summary</h3><div class="estimate-row"><span>Selected vehicle</span><strong id="estimateVehicle">Not selected</strong></div><div class="estimate-row"><span>Daily rate</span><strong id="estimateRate">₹0.00</strong></div><div class="estimate-row"><span>Rental days</span><strong id="estimateDays">0</strong></div><div class="estimate-total"><span>Estimated total</span><strong id="estimateTotal">₹0.00</strong></div><p class="muted tiny">Pickup and return dates are counted inclusively. Final charges may differ if your rental terms include extra fees.</p></aside></div>
+</section><section class="container section"><div class="section-heading"><div><span class="eyebrow">BOOKING HISTORY</span><h2>Recent bookings</h2></div><button class="btn btn-light" id="refreshBookings">Refresh ↻</button></div><div class="table-wrap"><table><thead><tr><th>Booking</th><th>Customer</th><th>Vehicle</th><th>Dates</th><th>Total</th><th>Status</th><th>Update status</th></tr></thead><tbody id="rentalsTable"><tr><td colspan="7">Loading bookings…</td></tr></tbody></table></div></section>
+</main><footer class="footer"><span>© 2026 DriveEase Rental Management</span><span>Every booking, organized.</span></footer><script src="/js/main.js"></script><script src="/js/bookings.js"></script></body></html>
